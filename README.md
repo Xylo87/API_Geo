@@ -1,2 +1,2 @@
 # API_Geo
-⚡🌎 Application d'obtention d'informations de géolocalisation utilisant une API
+⚡🌎 Application d'obtention d'informations de géolocalisation utilisant une API.
