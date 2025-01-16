@@ -27,6 +27,12 @@ Il permet la saisie d'un code postal dans un champ de texte, pour pouvoir affich
 
 ---
 
+## 4. Accès
+
+Accédez directement au projet via [ce lien](https://xylo87.github.io/API_Geo/)
+
+---
+
 ## 4. Auteur
 Projet réalisé par Théo Arbogast (aka Xylo87).
 N'hésitez pas à ouvrir une issue ou à me contacter pour toute suggestion ou question.
