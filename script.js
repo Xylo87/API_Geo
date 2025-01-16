@@ -17,7 +17,7 @@ inputCP.addEventListener("input", async function() {
     
     // requête fetch vers l'API de géoloc avec le code postal saisi
     const response = await fetch(
-        `https://geo.api.gouv.fr/communes?codePostal=${value}&fields=region,nom,code,codesPostaux,codeRegion&format=json`)
+        `https://geo.api.gouv.fr/communes?codePostal=${value}&fields=region,nom,code,codesPostaux,codeRegion&format=json&geometry=centre`)
 
     // convertit la réponse en format JSON
     const data = await response.json()
