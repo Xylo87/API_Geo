@@ -67,18 +67,23 @@ inputCP.addEventListener("input", async function() {
     });
     
 
-
+// ajout d'un évènement "change" sur la liste de sélection
 selectVille.addEventListener("change", function () {
-    const maVille = data.find((element) => element.code === selectVille.value)
-    console.log(maVille)
 
+    // recherche dans le tableau "data" du data.code qui correspond à la valeur en cours de la liste déroulante
+    const maVille = data.find((element) => element.code === selectVille.value)
+
+    // retrait du marqueur à chaque entrée
     marker.remove()
 
+    // sauvegarde des coordonnées relatives au code postal
     let coorY = maVille.centre.coordinates[0]
     let coorX = maVille.centre.coordinates[1]
 
+    // nouvelle "vue" de la carte en fonction des coordonnées
     map.setView([coorX, coorY], 8)
 
+    // création et placement d'un nouveau marqueur pour correspondre aux coordonnées
     marker = L.marker([coorX, coorY]).addTo(map);
     })
 })
