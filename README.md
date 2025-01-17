@@ -3,12 +3,14 @@
 ## 1. Description 
 Ce projet est un exercice pratique de programmation asynchrone en **JavaScript**, utilisant une [API de découpage administratif](https://geo.api.gouv.fr/decoupage-administratif/communes) fournie par le gouvernement français.
 Il permet la saisie d'un code postal dans un champ de texte, pour pouvoir afficher une liste déroulante de villes correspondants à ce code.
+Une carte interactive a été ajoutée pour marquer de manière dynamique les villes sélectionnées dans la liste. Cette fonctionnalité a été ajoutée via la librairie **open-source** [LeafLet](https://leafletjs.com/).
 
 ---
 
 ## 2. Fonctionnalités
 - Un champ de texte pour saisir un code postal.
 - Un liste déroulante pour parcourir les villes correspondantes.
+- Une carte **OpenStreetMap** interactive qui marque les villes sélectionnées en temps réel et navigable à la souris.
 
 ---
 
